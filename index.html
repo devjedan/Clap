@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Clap</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="clapper.png">
+</head>
+<body>
+    <div class="full-page">
+        <div class="navbar">
+            <div>
+                <a href='index.html'>Clap</a>
+            </div>
+            <nav>
+                <ul id='MenuItems'>
+                    <li><a href='#'>Home</a></li>
+                    <li><a href='#'>Profile</a></li>
+                    <li><a href='#'>Movies</a></li>
+                    <li><a href='#'>Services</a></li>
+                    <li><button class='loginbtn' onclick="document.getElementById('login-form').style.display='block'" style="width:auto;">Login</button></li>
+                </ul>
+            </nav>
+        </div>
+        <div id='login-form'class='login-page'>
+            <div class="form-box">
+              <form action="connect.php" method="post">
+                <div class='button-box'>
+                    <div id='btn'></div>
+                    <button type='button'onclick='login()'class='toggle-btn'>Log In</button>
+                    <button type='button'onclick='register()'class='toggle-btn'>Register</button>
+                </div>
+                <form id='login' class='input-group-login'>
+                    <input type='text'class='input-field'placeholder='Email Id' required >
+		    <input type='password'class='input-field'placeholder='Enter Password' required>
+		    <input type='checkbox'class='check-box'><span>Remember Password</span>
+		    <button type='submit'class='submit-btn'>Log in</button>
+		 </form>
+		 <form id='register' class='input-group-register'>
+		     <input type='text'class='input-field' placeholder='FirstName' id="FirstName" name="FirstName" required>
+		     <input type='text'class='input-field'placeholder='LastName ' id="LastName" name="LastName" required>
+         <input type='text'class='input-field' placeholder='UserName' id="UserNameName" name="UserName" required>
+		     <input type='email'class='input-field'placeholder='EmailId' id="EmailId" name="EmailId" required>
+		     <input type='password'class='input-field'placeholder='Enter Password' id="Password" name="Password" required>
+		     <input type='password'class='input-field'placeholder='Confirm Password'  required>
+		     <input type='checkbox'class='check-box'><span>I agree to the terms and                                                   conditions</span>
+                    <button type='submit'class='submit-btn'>Register</button>
+	         </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        var x=document.getElementById('login');
+		var y=document.getElementById('register');
+		var z=document.getElementById('btn');
+		function register()
+		{
+			x.style.left='-400px';
+			y.style.left='50px';
+			z.style.left='110px';
+		}
+		function login()
+		{
+			x.style.left='50px';
+			y.style.left='450px';
+			z.style.left='0px';
+		}
+	</script>
+	<script>
+        var modal = document.getElementById('login-form');
+        window.onclick = function(event)
+        {
+            if (event.target == modal)
+            {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
+
+
+
+  <!--  <div class="hero">
+      <div class="form-box"></div>
+          <div class="button-box">
+            <div id="btn"></div>
+              <button type="button" class="toggle-btn">SignIn</button>
+
+              <button type="button" class="toggle-btn">SignUp</button>
+      </div>
+    </div>
+    <div class="social-icons">
+      <img src="facebooklogo.png">
+      <img src="googlelogo.png">
+      <img src="twitterlogo.png">
+    </div> -->
