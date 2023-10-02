@@ -16,7 +16,7 @@ To get started with Clap, follow these simple steps:
 1. **Clone the Repository:**
 
    ```bash
-   git clone https://github.com/yourusername/clap.git
+   git clone https://github.com/devjedan/clap.git
 
 Navigate to the Project Folder:
 
