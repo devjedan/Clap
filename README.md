@@ -36,8 +36,12 @@ Contributing
 We welcome contributions to enhance Clap and expand its features. If you're interested in contributing, please follow these guidelines:
 
 Fork the repository to your GitHub account.
+
 Create a branch for your feature or bug fix.
+
 Make your changes and ensure they adhere to our coding standards.
 Test your changes thoroughly.
+
 Submit a pull request to the main branch of this repository.
+
 For more details, please refer to our Contribution Guidelines.
